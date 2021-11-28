@@ -13,7 +13,6 @@ out/
 .env.development
 .env.local
 
-
 # MISC
 .DS_Store
 npm-debug.log*
