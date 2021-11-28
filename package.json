@@ -8,9 +8,13 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "yarn staging",
+    "staging": "concurrently \"yarn api:dev\" \"yarn client:dev\"",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "lint": "eslint eslint packages/**/*"
+    "lint": "eslint eslint packages/**/*",
+    "client:dev": "yarn workspaces run client dev",
+    "api:dev": "yarn workspaces run api dev"
   },
   "husky": {
     "hooks": {
@@ -25,6 +29,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "concurrently": "^6.4.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
