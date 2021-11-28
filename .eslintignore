@@ -3,4 +3,15 @@ node_modules/
 build/
 dist/
 out/
+public/
+
+yarn.lock
+package-lock.json
+
+.env
+.env.production
+.env.development
+.env.local
+
+
 

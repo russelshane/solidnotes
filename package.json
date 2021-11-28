@@ -12,25 +12,15 @@
     "staging": "concurrently \"yarn dev:api\" \"yarn dev:client\"",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "lint": "eslint eslint packages/**/*",
+    "lint": "eslint --fix packages/**/*",
     "dev:client": "yarn workspaces run client dev",
     "dev:api": "yarn workspaces run api dev"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "packages/**/*.{ts,tsx}": [
-      "eslint --fix"
-    ]
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "concurrently": "^6.4.0",
-    "eslint": "^8.3.0",
+    "eslint": "7.11.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
