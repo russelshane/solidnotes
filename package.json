@@ -10,7 +10,7 @@
   "scripts": {
     "start": "yarn staging",
     "staging": "concurrently \"yarn dev:api\" \"yarn dev:client\"",
-    "format": "prettier --write .",
+    "format": "prettier --write packages/",
     "prepare": "husky install",
     "lint": "eslint --fix packages/**/*",
     "dev:client": "yarn workspaces run client dev",

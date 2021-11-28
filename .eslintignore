@@ -4,6 +4,7 @@ build/
 dist/
 out/
 public/
+/coverage
 
 yarn.lock
 package-lock.json
