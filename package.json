@@ -9,12 +9,12 @@
   ],
   "scripts": {
     "start": "yarn staging",
-    "staging": "concurrently \"yarn api:dev\" \"yarn client:dev\"",
+    "staging": "concurrently \"yarn dev:api\" \"yarn dev:client\"",
     "format": "prettier --write .",
     "prepare": "husky install",
     "lint": "eslint eslint packages/**/*",
-    "client:dev": "yarn workspaces run client dev",
-    "api:dev": "yarn workspaces run api dev"
+    "dev:client": "yarn workspaces run client dev",
+    "dev:api": "yarn workspaces run api dev"
   },
   "husky": {
     "hooks": {
