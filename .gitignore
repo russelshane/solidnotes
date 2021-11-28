@@ -1,0 +1,16 @@
+# MODULES
+node_modules/
+build/
+dist/
+out/
+
+# SECRETS
+.env
+.env.production
+.env.development
+.env.local
+
+
+# MISC
+npm-debug.log
+yarn-error.log
