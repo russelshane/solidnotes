@@ -9,8 +9,11 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.0",
+    "@stitches/react": "^1.2.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3"
   },
   "devDependencies": {
@@ -18,9 +21,11 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
+    "@types/loadable__component": "^5.13.4",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.3.2",
     "typescript": "^4.5.2"
   },
   "browserslist": {
