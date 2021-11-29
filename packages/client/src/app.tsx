@@ -7,6 +7,7 @@ import { globalStyles } from './styles/GlobalStyle';
 
 // Dynamic Components
 const Index = loadable(() => import('./pages/Index'));
+const Dashboard = loadable(() => import('./pages/Dashboard'));
 
 const Application: React.FC = () => {
   // Initialize app global styles created with @stitches/react module
@@ -17,6 +18,7 @@ const Application: React.FC = () => {
     <Router>
       <Routes>
         <Route path={ROUTES.INDEX} element={<Index />} />
+        <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
       </Routes>
     </Router>
   );
