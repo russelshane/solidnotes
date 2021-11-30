@@ -1,9 +1,4 @@
-import React, {
-  ChangeEventHandler,
-  EventHandler,
-  FormEventHandler,
-  useState,
-} from 'react';
+import React, { useState } from 'react';
 import loadable from '@loadable/component';
 
 import { HeaderElement } from './style';
