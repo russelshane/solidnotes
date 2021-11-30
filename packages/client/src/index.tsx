@@ -1,4 +1,4 @@
 import { render } from 'react-dom';
 import Application from './app';
 
-render(<Application />, document.getElementById('root'));
+render(<Application />, document.getElementById('react-root'));
