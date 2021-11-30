@@ -1,3 +1,9 @@
+/**
+ * SolidNotes by @russelshane
+ * Copyright (c) 2022. All Rights Reserved.
+ * Apache License v2.0
+ */
+
 import React from 'react';
 
 const Application: React.FC = () => {
