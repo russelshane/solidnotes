@@ -1,6 +1,6 @@
 import express, { json, urlencoded, Express } from 'express';
-import { config } from './util/config';
-import logger from './util/logger';
+import { config } from '../util/config';
+import logger from '../util/logger';
 
 // Function to launch the server's parent API service
 async function api() {
