@@ -3,7 +3,7 @@ import { styled } from '@stitches/react';
 export const LayoutElement = styled('div', {
   margin: 0,
   padding: 0,
-  background: '#fff',
+  background: '#FFEFD2',
   color: 'rgb(44,44,46)',
 
   '&.dark': {
