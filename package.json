@@ -13,8 +13,8 @@
     "format": "prettier --write packages/",
     "prepare": "husky install",
     "lint": "eslint --fix packages/**/*",
-    "dev:client": "yarn workspaces run client dev",
-    "dev:api": "yarn workspaces run api dev"
+    "dev:client": "yarn workspace client start",
+    "dev:api": "yarn workspace api dev"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
