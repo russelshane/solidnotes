@@ -7,7 +7,7 @@
 </div>
 <p align="center">
   <strong>
-    Collaborative note-taking app ✏️
+    Collaborative note-taking app ️✨
 </strong>
 </p>
 
