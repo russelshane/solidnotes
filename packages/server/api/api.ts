@@ -6,6 +6,7 @@ import { config } from '../util/config';
 import { corsConfig } from '../util/cors';
 import { urlEncodedConfig } from '../util/urlEncoded';
 import { setupAPIRoutes } from './setupRoutes';
+import { ConnectDatabase } from '../service/Database';
 
 // Function to launch the server's parent API service
 async function api() {
@@ -13,6 +14,9 @@ async function api() {
   app.use(urlencoded(urlEncodedConfig));
   app.use(cors(corsConfig));
   app.use(json());
+
+  // Create connection with PostgreSQL
+  await ConnectDatabase();
 
   // Attach API routes and the handlers
   setupAPIRoutes(app);
