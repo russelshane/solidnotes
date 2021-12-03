@@ -1,5 +1,4 @@
-import { Entity, PrimaryColumn, Column, BaseEntity, ManyToOne } from 'typeorm';
-import { User } from './User';
+import { Entity, PrimaryColumn, Column, BaseEntity } from 'typeorm';
 
 @Entity({ name: 'notes' })
 export class Note extends BaseEntity {
@@ -11,8 +10,4 @@ export class Note extends BaseEntity {
 
   @Column()
   text: string;
-
-  @Column()
-  @ManyToOne(() => User, (user) => user.notes)
-  author_id: string;
 }

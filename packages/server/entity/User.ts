@@ -1,28 +1,16 @@
-import {
-  Entity,
-  PrimaryColumn,
-  Column,
-  JoinColumn,
-  BaseEntity,
-  OneToMany,
-} from 'typeorm';
-import { Note } from './Note';
+import { Entity, PrimaryColumn, Column, BaseEntity } from 'typeorm';
 
 @Entity({ name: 'users' })
 export class User extends BaseEntity {
-  @PrimaryColumn('uuid')
-  id: string;
-
-  @Column()
+  @PrimaryColumn()
   username: string;
 
   @Column()
   password: string;
 
   @Column()
-  avatar: string;
+  email: string;
 
-  @JoinColumn()
-  @OneToMany(() => Note, (note) => note.author_id, { nullable: true })
-  notes: Note[];
+  @Column({ nullable: true })
+  avatar: string;
 }

@@ -1,14 +1,14 @@
 import { ConnectionOptions, createConnection } from 'typeorm';
 
 import logger from '../util/logger';
-import { Note } from '../entity/Note';
 import { User } from '../entity/User';
 
 async function ConnectDatabase() {
   await createConnection({
     type: 'postgres',
+    synchronize: true,
     url: process.env.DATABASE_URL,
-    entities: [User, Note],
+    entities: [User],
     ssl: {
       rejectUnauthorized: false,
     },
