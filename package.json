@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "solidnotes",
+  "version": "2.0.9",
+  "author": "solidnotes <hello@solidnotes.app>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {},
+  "devDependencies": {}
+}
